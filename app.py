@@ -43,6 +43,11 @@ def index():
     app.logger.warning('Hello')
     return app.send_static_file('main.html')
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
 # @app.route('/weather_display')
 # def weather_display():
 #     app.logger.warning("this is a test")
